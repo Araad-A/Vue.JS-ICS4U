@@ -1,7 +1,10 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class = "bg-light mb-3" id="nav">
+    <img id = "league-logo-1" alt="Vue logo" src="@/assets/logo.png">
+    <router-link class = "h5" to="/">Standings</router-link> |
+    <router-link class = "h5" to="/add">Add Teams & Games</router-link> |
+    <router-link class = "h5" to="/viewgames">View Games</router-link>
+    <img id = "league-logo-2" alt="Vue logo" src="@/assets/logo.png">
   </div>
   <router-view/>
 </template>
@@ -15,16 +18,27 @@
   color: #2c3e50;
 }
 
+#league-logo-1{
+  width:3em;
+  margin-right: 1.5em;
+}
+
+#league-logo-2{
+  width:3em;
+  margin-left: 1.5em;
+}
+
 #nav {
   padding: 30px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #85898d;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #3d195b;
 }
 </style>
